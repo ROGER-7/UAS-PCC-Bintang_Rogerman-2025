@@ -15,4 +15,4 @@ jobs:
         run: |
           docker build -t roger375/uas-pcc-bintang_rogerman-2025:latest -f Dockerfile .
           echo $ secrets.password  | docker login -u $ secrets.username --password-stdin
-          docker push roger375/uas-pcc-bintang_rogerman-2025:latest 
+          docker push roger375/uas-pcc-bintang_rogerman-2025:latest  
