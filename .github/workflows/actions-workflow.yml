@@ -14,5 +14,5 @@ jobs:
       - name: login and build
         run: |
           docker build -t roger375/uas-pcc-bintang_rogerman-2025:latest -f Dockerfile .
-          echo $ secrets.DOCKERHUB_ACCESSTOKEN  | docker login -u $ secrets.DOCKERHUB_USERNAME --password-stdin
-          docker push roger375/uas-pcc-bintang_rogerman-2025:latest  
+          echo ${{ secrets.DOCKERHUB_ACCESSTOKEN }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+          docker push roger375/uas-pcc-bintang_rogerman-2025:latest
